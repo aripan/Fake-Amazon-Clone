@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Checkout from "./components/Checkout";
 import Login from "./components/Login";
 import Payment from "./components/Payment";
+import Orders from "./components/Orders";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
@@ -61,6 +62,11 @@ function App() {
             <Elements stripe={promise}>
               <Payment />
             </Elements>
+          </Route>
+          {/* ORDERS PAGE */}
+          <Route path="/orders">
+            <Header />
+            <Orders />
           </Route>
           {/* HOME PAGE */}
           <Route path="/">
