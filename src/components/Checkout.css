@@ -16,3 +16,45 @@
   padding: 10px;
   border-bottom: 1px solid lightgray;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .checkout__left {
+    grid-area: left;
+  }
+
+  .checkout__right {
+    grid-area: right;
+    margin: auto;
+  }
+  .checkout {
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "left"
+      "right";
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up to 768px) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .checkout__left {
+    grid-area: left;
+  }
+
+  .checkout__right {
+    grid-area: right;
+    margin: auto;
+  }
+  .checkout {
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "left"
+      "right";
+  }
+}

@@ -2,8 +2,6 @@
   height: 4rem;
   display: flex;
   align-items: center;
-
-  /* background-color: #131921; */
   background-color: rgb(51, 49, 49);
   position: sticky;
   top: 0;
@@ -72,3 +70,112 @@
   margin-left: 0.625rem;
   margin-right: 0.625rem;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .header__logo {
+    grid-area: logo;
+  }
+
+  .header__search {
+    grid-area: searchBar;
+    padding-bottom: 0.8rem;
+  }
+
+  .header__nav {
+    grid-area: navigation;
+    text-align: center;
+  }
+
+  .header {
+    width: 100vw;
+    height: 6rem;
+    padding: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "logo navigation navigation navigation"
+      ". searchBar searchBar .";
+  }
+
+  .header__option {
+    grid-area: navOps;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header__optionBasket {
+    grid-area: navOpsBasket;
+  }
+
+  .header__nav {
+    justify-items: end;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "navOps navOps navOps navOpsBasket";
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up to 768px)*/
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .header__logo {
+    grid-area: logo;
+  }
+
+  .header__search {
+    grid-area: searchBar;
+    padding-bottom: 0.8rem;
+  }
+
+  .header__nav {
+    grid-area: navigation;
+    text-align: center;
+  }
+
+  .header {
+    max-width: 100vw;
+    height: 6rem;
+    padding: auto 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "logo navigation navigation navigation"
+      ". searchBar searchBar .";
+  }
+
+  .header__option {
+    grid-area: navOps;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header__optionBasket {
+    grid-area: navOpsBasket;
+  }
+
+  .header__nav {
+    justify-items: end;
+    padding-right: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "navOps navOps navOps navOpsBasket";
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {
+  
+} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {
+} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {
+  ...;
+} */

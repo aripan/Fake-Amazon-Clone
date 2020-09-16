@@ -18,7 +18,7 @@ function Headers() {
   return (
     <div className="header">
       {/* Amazon Logo */}
-      <Link to="/">
+      <Link className="header__link" to="/">
         <img
           className="header__logo"
           src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
