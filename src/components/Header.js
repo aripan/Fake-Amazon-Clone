@@ -32,7 +32,7 @@ function Headers() {
       </div>
 
       <div className="header__nav">
-        <Link to={!user && "/login"}>
+        <Link to={!user && "/login"} style={{ textDecoration: "none" }}>
           {/* Sign In */}
           <div onClick={handleAuthenticaton} className="header__option">
             <span className="header__optionLineOne">
@@ -44,7 +44,7 @@ function Headers() {
           </div>
         </Link>
 
-        <Link to="/orders">
+        <Link to="/orders" style={{ textDecoration: "none" }}>
           {/* Returns & Orders */}
           <div className="header__option">
             <span className="header__optionLineOne">Returns</span>
@@ -52,14 +52,16 @@ function Headers() {
           </div>
         </Link>
 
-        {/* Prime */}
-        <div className="header__option">
-          <span className="header__optionLineOne">Your</span>
-          <span className="header__optionLineTwo">Prime</span>
-        </div>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          {/* Prime */}
+          <div className="header__option">
+            <span className="header__optionLineOne">Your</span>
+            <span className="header__optionLineTwo">Prime</span>
+          </div>
+        </Link>
 
         {/* Basket */}
-        <Link to="/checkout">
+        <Link to="/checkout" style={{ textDecoration: "none" }}>
           <div className="header__optionBasket">
             <ShoppingCartOutlinedIcon />
             <span className="header__optionLineTwo header__basketCount">
