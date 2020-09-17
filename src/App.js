@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import Checkout from "./components/Checkout";
 import Login from "./components/Login";
+import Register from "./components/Register";
 import Payment from "./components/Payment";
 import Orders from "./components/Orders";
 import Footer from "./components/Footer";
@@ -27,6 +28,10 @@ function App() {
       console.log("THE USER IS >>> ", authUser);
 
       if (authUser) {
+        //! THIS IS HARD CODE, BUT NEED TO MAKE IT DYNAMIC
+        // authUser.updateProfile({
+        //   displayName: authUser.,
+        // });
         // the user just logged in / the user was logged in
 
         dispatch({
@@ -48,6 +53,10 @@ function App() {
     <Router>
       <div className="app">
         <Switch>
+          {/* REGISTER PAGE */}
+          <Route path="/register">
+            <Register />
+          </Route>
           {/* LOGIN PAGE */}
           <Route path="/login">
             <Login />
