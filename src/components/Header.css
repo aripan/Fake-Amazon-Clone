@@ -80,11 +80,14 @@
   .header__search {
     grid-area: searchBar;
     padding-bottom: 0.8rem;
+    /* padding-left: 50px; */
   }
 
   .header__nav {
     grid-area: navigation;
     text-align: center;
+    padding-left: auto;
+    padding-right: auto;
   }
 
   .header {
@@ -92,10 +95,11 @@
     height: 6rem;
     padding: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 0;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-      "logo navigation navigation navigation"
+      "logo navigation  navigation navigation"
       ". searchBar searchBar .";
   }
 
@@ -107,11 +111,14 @@
 
   .header__optionBasket {
     grid-area: navOpsBasket;
+    margin: 0;
+    padding: 0;
   }
 
   .header__nav {
     justify-items: end;
     display: grid;
+
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: "navOps navOps navOps navOpsBasket";
@@ -139,7 +146,7 @@
     height: 6rem;
     padding: auto 15px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
       "logo navigation navigation navigation"

@@ -103,8 +103,8 @@ function Payment() {
         </div>
 
         {/* Payment section - Review Items */}
-        <div className="payment__section">
-          <div className="payment__title">
+        <div className="payment__section" id="payment__sectionItems">
+          <div className="payment__title" id="payment__titleItems">
             <h3>Review items and delivery</h3>
           </div>
           <div className="payment__items">
