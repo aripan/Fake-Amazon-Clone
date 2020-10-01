@@ -1,68 +1,59 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## React-Amazon-Clone
 
-## Available Scripts
+A full-stack Amazon Clone application is built using React and Firebase(Backend-as-a-Service).
 
-In the project directory, you can run:
+## Functionality
 
-### `npm start`
+Well if you are familiar with the interface of Amazon, then you already know what you are going to experience. If not, then following functionalities are expected to experience:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Shows Home page where you can access the following:
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- Display Products
+- Sign In functionality
+- Return & Order Page
+- Checkout Page
 
-### `npm test`
+2. While surfing, the user can make a decision by choosing a product from the display depending on the price & review.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. The user can checkout the product in the basket as well as remove it from the basket.
 
-### `npm run build`
+4. Along with 1, 2, and 3, the user can go on to buy the product. For that the user must be logged-in.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. A new user can register his/her account as well.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Front-end: React
+- Back-end: Node JS
+- Backend-as-a-Service: Firebase
 
-### `npm run eject`
+## Hosted Version
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The latest version is deployed and hosted on Firebase. Check it out by clicking [HERE](https://react--clone-c8de9.web.app).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+You can login using the following credentials:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Email: test@gmail.com
+- Password: password
 
-## Learn More
+Or you can Register using a fake email/password.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Notes
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. The Web App uses SSL encryption through HTTPS protocol to transfer input data.
 
-### Code Splitting
+2. Passwords are hashed once received by the backend.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+3. Despite 1 and 2, I'd still recommend using a fake/weak password to avoid any potential future attacks.
 
-### Analyzing the Bundle Size
+4. Emails aren't verified, so you can use any email even if it's fake.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## Last but not least
 
-### Making a Progressive Web App
+- Sometimes the server responds slow for login/register requests, so please be patient.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+- However, do check your browser console for any potential bad requests or errors.
 
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- Raise an issue in case you find any.
