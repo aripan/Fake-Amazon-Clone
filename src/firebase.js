@@ -1,14 +1,15 @@
 import firebase from "firebase";
+require("dotenv").config();
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBVompMO1CzNGgX5UweppqWHzRA5fCN_30",
-  authDomain: "react--clone-c8de9.firebaseapp.com",
-  databaseURL: "https://react--clone-c8de9.firebaseio.com",
-  projectId: "react--clone-c8de9",
-  storageBucket: "react--clone-c8de9.appspot.com",
-  messagingSenderId: "91292172114",
-  appId: "1:91292172114:web:a49572951fc6582279c48b",
-  measurementId: "G-QBJKY49RBE",
+  apiKey: process.env.API_KEY,
+  authDomain: process.env.AUTH_DOMAIN,
+  databaseURL: process.env.DATABASE_URL,
+  projectId: process.env.PROJECT_Id,
+  storageBucket: process.env.STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGING_SENDER_ID,
+  appId: process.env.APP_ID,
+  measurementId: process.env.MEASUREMENT_ID,
 };
 
 // Initializing the app
